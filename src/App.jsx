@@ -9,15 +9,11 @@ const App = () => {
     <>
       <Navbar />
       <Main />
-      <Row rowId="1" title="Coming soon" fetchURL={requests.requestUpcoming} />
-      <Row rowId="2" title="Popular" fetchURL={requests.requestPopular} />
-      <Row
-        rowId="3"
-        title="On High Demand"
-        fetchURL={requests.requestTrending}
-      />
-      <Row rowId="4" title="Most Watched" fetchURL={requests.requestTopRated} />
-      <Row rowId="5" title="Horror" fetchURL={requests.requestHorror} />
+      <Row title="Coming soon" fetchURL={requests.requestUpcoming} />
+      <Row title="Popular" fetchURL={requests.requestPopular} />
+      <Row title="On High Demand" fetchURL={requests.requestTrending} />
+      <Row title="Most Watched" fetchURL={requests.requestTopRated} />
+      <Row title="Horror" fetchURL={requests.requestHorror} />
     </>
   );
 };
