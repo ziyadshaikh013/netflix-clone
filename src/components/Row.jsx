@@ -14,6 +14,8 @@ const Row = ({ title, fetchURL }) => {
     });
   }, [fetchURL]);
 
+  console.log("movies", movies);
+
   const sliderRef = useRef(null);
 
   const slideLeft = () => {
